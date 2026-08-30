@@ -1,0 +1,25 @@
+name: Feature request
+description: Propose a new module profile, CAN rule or hardware feature
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Use case
+      description: Describe the bench setup and the problem this feature solves.
+    validations:
+      required: true
+  - type: textarea
+    id: can
+    attributes:
+      label: Verified CAN behavior
+      description: Direction, IDs, timing and sanitized payloads or logs
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed implementation
+    validations:
+      required: false

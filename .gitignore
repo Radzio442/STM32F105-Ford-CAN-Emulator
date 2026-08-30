@@ -1,0 +1,28 @@
+# STM32CubeIDE build output
+Debug/
+Release/
+
+# Eclipse / CubeIDE local state
+.metadata/
+.recommenders/
+RemoteSystemsTempFiles/
+
+# Generated files
+*.o
+*.d
+*.su
+*.cyclo
+*.elf
+*.hex
+*.bin
+*.map
+*.list
+
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~

@@ -1,0 +1,42 @@
+name: Bug report
+description: Report reproducible firmware or CAN behavior
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Remove VINs and other identifying vehicle data from public logs.
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware
+      description: Board, transceivers and connected modules
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Firmware revision
+      description: Commit hash or release version
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Observed behavior
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: can
+    attributes:
+      label: CAN details
+      description: Channel, arbitration ID, DLC, payload and relevant sanitized log
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
